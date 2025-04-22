@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Hortons</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff8f0;
+        }
+
+        header {
+            background-color: #c8102e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #73000a;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 15px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 10px 16px;
+                border-radius: 4px;
+                transition: background 0.3s;
+            }
+
+                nav a:hover {
+                    background-color: #c8102e;
+                }
+
+        .banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #c8102e;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+            .menu-item img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .menu-item h3 {
+                margin: 15px 0 10px;
+                color: #333;
+            }
+
+        .btn {
+            background-color: #c8102e;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .btn:hover {
+                background-color: #a10b23;
+            }
+
+        footer {
+            background-color: #c8102e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Tim Hortons</h1>
+        <p>Your coffee. Your way.</p>
+    </header>
+
+    <img src="https://news.timhortons.ca/content/dam/th-news/article-images/NCD%20EN%20banner.png" alt="Tim Hortons New Banner" class="banner">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Tim Hortons</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            Tim Hortons is Canada s beloved coffee and quick-service restaurant. From fresh brews to hearty meals, we bring smiles to millions daily. Explore our menu and taste the tradition!
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tim Hortons. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

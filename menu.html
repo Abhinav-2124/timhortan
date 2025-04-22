@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Tim Hortons</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff8f0;
+        }
+
+        header {
+            background-color: #c8102e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #73000a;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 15px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 10px 16px;
+                border-radius: 4px;
+                transition: background 0.3s;
+            }
+
+                nav a:hover {
+                    background-color: #c8102e;
+                }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #c8102e;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+            .menu-item img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .menu-item h3 {
+                margin: 15px 0 10px;
+                color: #333;
+            }
+
+        .btn {
+            background-color: #c8102e;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .btn:hover {
+                background-color: #a10b23;
+            }
+
+        footer {
+            background-color: #c8102e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Menu</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="drinks">
+        <h2>Drinks Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="C:\Users\Admin\OneDrive\Desktop\brew.jpg" alt="Original Blend Coffee">
+                <h3>Original Blend Coffee</h3>
+                <p>Freshly brewed signature coffee made with 100% Arabica beans.</p>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://timhortons-menu.ca/wp-content/uploads/2024/12/Tim-Hortons-Iced-Capp-Menu-1024x576.webp" alt="Iced Cappuccino">
+                <h3>Iced Capp</h3>
+                <p>Our classic cold and creamy iced cappuccino &mdash; a customer favourite.</p>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\Admin\OneDrive\Desktop\fv.jpg" alt="French Vanilla">
+                <h3>French Vanilla</h3>
+                <p>Rich, creamy, and deliciously smooth &mdash; the perfect warm treat for any time of day.</p>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>Food Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="C:\Users\Admin\OneDrive\Desktop\timbits.jpg" alt="Timbits">
+                <h3>Timbits</h3>
+                <p>Irresistible bite-sized donut holes in a variety of flavours.</p>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\Admin\OneDrive\Desktop\breakfast-wrap - Copy.jpg" alt="Breakfast Wrap">
+                <h3>Breakfast Wrap</h3>
+                <p>Egg, cheese and sausage wrap for your morning hunger fix.</p>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\Admin\OneDrive\Desktop\grilledpg.jpg" alt="Grilled Cheese">
+                <h3>Grilled Cheese Sandwich</h3>
+                <p>Classic melted cheese grilled on golden bread &mdash; a warm delight!</p>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tim Hortons. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
